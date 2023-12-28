@@ -46,7 +46,7 @@ Docker funciona com uma arquitetura Cliente-Servidor, em que o cliente (Docker A
 
 ![Arquitetura Docker](/images/docker-architecture.webp?raw=true)
 
-O Docker Daemon escuta por requisições do Client e gerencia os Objetos Docker, como Imagens, Containers, Volumes e Networks. Além disso, o Docker Daemon também pode acessar Docker Registries, onde são armazenados Imagens. O Docker Hub é um registry público, onde o Docker busca as imagens por padrão.
+O Docker Daemon escuta por requisições do Client e gerencia os Objetos Docker, como Imagens, Containers, Volumes e Networks. Além disso, o Docker Daemon também pode acessar Docker Registries, onde são armazenadas as Imagens. O Docker Hub é um registry público, onde o Docker busca as imagens por padrão.
 
 ## Aplicação em Container
 
@@ -71,7 +71,7 @@ O primeiro comando faz o build da imagem da aplicação, já o segundo cria e ro
 
 ## Atualização e Compartilhamento
 
-Após alguma mudança na aplicação é implementada, é possível construir a nova imagem da aplicação com o mesmo comando de build utilizado na seção anterior. Para parar um container em execução e removê-lo, utilize os seguintes comandos:
+Após a implementação de uma funcionalidade na aplicação, é possível construir a nova imagem com o mesmo comando de build utilizado na seção anterior. Para parar um container em execução e removê-lo, utilize os seguintes comandos:
 
 ```
 $ docker stop <container-id>
