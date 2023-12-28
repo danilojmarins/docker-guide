@@ -44,7 +44,7 @@ Para entender melhor o funcionamento do Container por de baixo dos panos, assist
 
 Docker funciona com uma arquitetura Cliente-Servidor, em que o cliente (Docker API e CLI) enviam requisições HTTP, através de UNIX sockets ou network interfaces, ao Docker Daemon (processo intermitente rodando em plano de fundo).
 
-![Arquitetura Docker](https://docs.docker.com/get-started/images/docker-architecture.webp)
+![Arquitetura Docker](/images/docker-architecture.webp?raw=true)
 
 O Docker Daemon escuta por requisições do Client e gerencia os Objetos Docker, como Imagens, Containers, Volumes e Networks. Além disso, o Docker Daemon também pode acessar Docker Registries, onde são armazenados Imagens. O Docker Hub é um registry público, onde o Docker busca as imagens por padrão.
 
@@ -128,7 +128,7 @@ Ao utilizar esse tipo de abordagem, diversos benefícios são alcançados, como:
 
 Porém, para que esses múltiplos processos possam se comunicar entre si, por exemplo o Frontend enviar uma requisição HTTP para o Backend e este consultar o Banco de Dados, é necessário que todos estejam conectados na mesma rede, permitindo a comunicação, uma vez que são isolados de outros processos. Para isso são utilizadas as Docker Networks.
 
-![Application Network](https://docs.docker.com/get-started/images/multi-container.webp?w=350h=250)
+![Application Network](/images/multi-container.webp?raw=true)
 
 No nosso exemplo, criaremos uma network em que o container da aplicação e um container do BD MySQL estejam ambos conectados.
 
